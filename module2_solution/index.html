@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="ShoppingListApp">
+<html lang="en" ng-app="ShoppingListCheckOff">
   <head>
     <title>Shopping List Check Off</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +29,7 @@
   <div class="row">
 
     <!-- To Buy List -->
-    <div class="col-md-6" ng-controller="ShoppingListBuyController as buyList">
+    <div class="col-md-6" ng-controller="ToBuyController as buyList">
      <h2>To Buy:</h2>
      <ul>
          <li ng-repeat="item in buyList.items">
@@ -41,7 +41,7 @@
     </div>
 
     <!-- Already Bought List -->
-    <div class="col-md-6" ng-controller="ShoppingListBoughtController as boughtList">
+    <div class="col-md-6" ng-controller="AlreadyBoughtController as boughtList">
      <h2>Already Bought:</h2>
      <ul>
          <li ng-repeat="item in boughtList.items">
